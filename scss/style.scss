@@ -1,0 +1,27 @@
+@import "normalize";
+@import "media_max";
+@import "variables";
+@import "mixins";
+
+body {
+   // font-family: 'Lato', sans-serif;
+   // line-height: 1.5;
+}
+.wrapper{
+   // position: relative;
+}
+section {
+   // padding: 100px 0;
+   // @include to768{padding: 60px 0;}
+}
+.container {
+   // max-width: 1140px;
+   // margin: 0 auto;
+   // padding: 0 20px;
+}
+
+
+
+@include upto1024 {
+   
+}

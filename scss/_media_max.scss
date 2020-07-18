@@ -1,0 +1,125 @@
+@mixin to1800 {
+	@media only screen and (max-width: 1800px) {
+		@content;
+	}
+}
+@mixin to1600 {
+	@media only screen and (max-width: 1600px) {
+		@content;
+	}
+}
+@mixin to1468 {
+	@media only screen and (max-width: 1468px) {
+		@content;
+	}
+}
+@mixin to1400 {
+	@media only screen and (max-width: 1400px) {
+		@content;
+	}
+}
+@mixin to1366 {
+	@media only screen and (max-width: 1366px) {
+		@content;
+	}
+}
+@mixin to1300 {
+	@media only screen and (max-width: 1300px) {
+		@content;
+	}
+}
+@mixin to1280 {
+	@media only screen and (max-width: 1280px) {
+		@content;
+	}
+}
+@mixin to1200 {
+	@media only screen and (max-width: 1199.98px) {
+		@content;
+	}
+}
+@mixin to1100 {
+	@media only screen and (max-width: 1099.98px) {
+		@content;
+	}
+}
+@mixin to1024 {
+	@media only screen and (max-width: 1023.98px) {
+		@content;
+	}
+}
+@mixin to992 {
+	@media only screen and (max-width: 991.98px) {
+		@content;
+	}
+}
+@mixin to900 {
+	@media only screen and (max-width: 900px) {
+		@content;
+	}
+}
+@mixin to768 {
+	@media only screen and (max-width: 767.98px) {
+		@content;
+	}
+}
+@mixin to680 {
+	@media only screen and (max-width: 680px) {
+		@content;
+	}
+}
+@mixin to640 {
+	@media only screen and (max-width: 640px) {
+		@content;
+	}
+}
+@mixin to576 {
+	@media only screen and (max-width: 575.98px) {
+		@content;
+	}
+}
+@mixin to525 {
+	@media only screen and (max-width: 524.98px) {
+		@content;
+	}
+}
+@mixin to480 {
+	@media only screen and (max-width: 480px) {
+		@content;
+	}
+}
+@mixin to425 {
+	@media only screen and (max-width: 424.98px) {
+		@content;
+	}
+}
+@mixin to375 {
+	@media only screen and (max-width: 374.98px) {
+		@content;
+	}
+}
+
+//min
+@mixin upto1024 {
+	@media only screen and (min-width: 1023.98px) {
+		@content;
+	}
+}
+
+
+// height
+@mixin hto730 {
+	@media only screen and (max-height: 730px) {
+		@content;
+	}
+}
+@mixin hto620 {
+	@media only screen and (max-height: 620px) {
+		@content;
+	}
+}
+@mixin hto560 {
+	@media only screen and (max-height: 560px) {
+		@content;
+	}
+}
