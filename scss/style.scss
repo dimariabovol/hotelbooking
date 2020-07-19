@@ -2,22 +2,387 @@
 @import "media_max";
 @import "variables";
 @import "mixins";
+@import url("https://use.typekit.net/eod5ffe.css");
 
 body {
-   // font-family: 'Lato', sans-serif;
-   // line-height: 1.5;
+   font-family: muli, sans-serif;
+   line-height: 1.5;
 }
 .wrapper{
    // position: relative;
 }
 section {
-   // padding: 100px 0;
-   // @include to768{padding: 60px 0;}
+   padding: 55px 0;
+   @include to768{padding: 30px 0;}
 }
 .container {
-   // max-width: 1140px;
-   // margin: 0 auto;
-   // padding: 0 20px;
+   max-width: 1140px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+// heading
+.heading {
+   background-color: $bg-color;
+   padding: 25px 0;
+   &__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__text {
+      flex: 1 1;
+      font-size: 11px;
+      font-weight: 400;
+      color: $text-color-d;
+      span {
+         font-weight: 700;
+         margin-right: 10px;
+      }
+   }
+   &__link {
+      display: flex;
+      align-items: center;
+      margin-right: 80px;
+      &:last-child {margin-right: 0;}
+      .icon {
+         width: 16px;
+         height: 16px;
+         margin-right: 20px;
+         margin-bottom: 2px;
+         fill: $text-color-d;
+      }
+      span {
+         font-size: 11px;
+         font-weight: 400;
+         color: $text-color-d;
+      }
+   }
+   @include to768 {
+      padding: 15px 0;
+      &__link {
+         margin-right: 40px;
+         .icon {
+            margin-right: 0px;
+         }
+         span {
+            display: none;
+         }
+      }
+   }
+   @include to525 {
+      &__text {
+         span {
+            display: none;
+         }
+      }
+   }
+}
+
+// header
+.header {
+   background-color: $bg-white;
+   padding: 40px 0;
+   &__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+   }
+   &__logo {
+      display: inline-block;
+      margin-right: 20px;
+   }
+   &__search {
+      display: flex;
+      justify-content: center;
+      flex: 4 4;
+      margin-right: 10px;
+   }
+   &__shop {
+      display: flex;
+      justify-content: center;
+      flex: 1 1;
+      margin-right: 10px;
+   }
+   &.mob-search {
+      .search__form {
+         opacity: 1;
+         visibility: visible;
+         transition: opacity .3s, visibility .3s;
+      }
+      .header__shop {
+         opacity: 0;
+         visibility: hidden;
+         transition: opacity .3s, visibility .3s;
+      }
+      .header__user {
+         opacity: 0;
+         visibility: hidden;
+         transition: opacity .3s, visibility .3s;
+      }
+   }
+   @include to768 {
+      padding: 25px 0;
+      &__body {
+         flex-wrap: wrap;
+      }
+      &__logo {
+         width: 100%;
+         text-align: center;
+         margin-bottom: 20px;
+      }
+      &__search {
+         justify-content: flex-start;
+         margin-right: 35px;
+      }
+      &__shop {
+         flex: 0 0;
+         margin-right: 35px;
+      }
+   }
+   @include to525 {
+      padding: 20px 0;
+      &__body {
+         flex-direction: row-reverse;
+      }
+      &__logo {
+         margin-bottom: 15px;
+      }
+      &__search {
+         flex: 0 0;
+         margin-right: 0;
+         .search__form {
+            opacity: 0;
+            visibility: hidden;
+            max-width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+         }
+         .search__mob {
+            display: flex;
+         }
+      }
+      &__shop {
+         margin-right: 35px;
+      }
+      &__user {
+         margin-right: 35px;
+      }
+   }
+   @include to425 {
+      &__shop {
+         margin-right: 20px;
+      }
+      &__user {
+         margin-right: 20px;
+         .user__photo {
+            margin-right: 15px;
+         }
+         .user__name {
+            margin-right: 10px;
+         }
+      }
+   }
+}
+.search {
+   &__form {
+      width: 100%;
+      max-width: 350px;
+      position: relative;
+   }
+   &__input {
+      width: 100%;
+      height: 40px;
+      font-family: muli, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      color: $text-color-d;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      background-color: $bg-color;
+      padding: 0 85px 0 25px;
+      &::placeholder {
+         font-size: 12px;
+         font-weight: 400;
+         color: $text-color-d;
+      }
+      &:focus {
+         border-color: $maincolor-l;
+         background-color: $bg-white;
+         transition: border-color .3, background-color .3;
+      }
+   }
+   &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 65px;
+      height: 40px;
+      border: 0;
+      border-radius: 0 6px 6px 0;
+      background-color: $maincolor-l;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      .icon {
+         width: 16px;
+         height: 16px;
+      }
+   }
+   &__mob {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      min-width: 40px;
+      height: 40px;
+      border: 0;
+      border-radius: 6px;
+      background-color: $maincolor-l;
+      cursor: pointer;
+      .icon {
+         width: 16px;
+         height: 16px;
+      }
+   }
+}
+.shop-cart {
+   &__btn {
+      border: 0;
+      background: none;
+      cursor: pointer;
+      position: relative;
+      .icon {
+         width: 25px;
+         height: 24px;
+         fill: $text-color-d;
+      }
+      span {
+         width: 20px;
+         height: 20px;
+         line-height: 22px;
+         font-family: muli, sans-serif;
+         font-size: 10px;
+         font-weight: 600;
+         color: $text-color-l;
+         background-color: $maincolor-l;
+         border-radius: 50%;
+         position: absolute;
+         top: -10px;
+         right: -10px;
+      }
+   }
+}
+.user {
+   display: flex;
+   align-items: center;
+   &__photo {
+      margin-right: 20px;
+      img {border-radius: 50%;}
+   }
+   &__name {
+      font-size: 14px;
+      font-weight: 400;
+      color: $text-color-d;
+      margin-right: 25px;
+   }
+   &__arrow {
+      .icon {
+         width: 18px;
+         height: 12px;
+         fill: $text-color-d;
+      }
+   }
+}
+
+// nav
+.nav {
+   background-color: $maincolor-d;
+   position: relative;
+   &__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row;
+   }
+   &__item {
+      font-size: 14px;
+      font-weight: 600;
+      color: $text-color-l;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: 30px 10px;
+      &:first-child {padding-left: 0;}
+      &:last-child {padding-right: 0;}
+   }
+   &__mob {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      span {
+         display: flex;
+         align-items: center;
+         font-size: 14px;
+         font-weight: 600;
+         color: $text-color-l;
+         text-transform: uppercase;
+         &::after {
+            content: '';
+            width: 18px;
+            height: 18px;
+            background-image: url(../img/svg/plus.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin: 0 0 5px 15px;
+         }
+      }
+   }
+   @include to992 {
+      &__item {
+         font-size: 13px;
+      }
+   }
+   @include to768 {
+      padding: 15px 0;
+      &__body {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         transform: scaleY(0);
+         transform-origin: 50% 0;
+         background-color: $maincolor-d;
+         position: absolute;
+         top: 50px;
+         left: 0;
+      }
+      &__item {
+         padding: 12px 0px;
+      }
+      &__mob {
+         display: flex;
+      }
+   }
+   &.mob-menu {
+      .nav__body {
+         transform: scaleY(1);
+         transition: transform .3s;
+      }
+      .nav__mob {
+         span {
+            color: $maincolor-d;
+            transition: color .3s;
+            &::after {
+               margin-right: 52px;
+               transform: rotate(225deg) scale(1.5);
+               transition: margin-right .3s, transform .3s;
+            }
+         }
+      }
+   }
 }
 
 

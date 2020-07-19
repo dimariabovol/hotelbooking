@@ -5,11 +5,109 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Hotel Booking</title>
    <link rel="stylesheet" href="css/style.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 <body>
    <div class="wrapper">
-      
+      <div class="heading">
+         <div class="container">
+            <div class="heading__body">
+               <div class="heading__text">
+                  <span>Questions? Need Help?</span>Call us on (+123) 456 1500
+               </div>
+               <a href="#" class="heading__link">
+                  <svg class="icon icon-gift"><use xlink:href="#icon-gift"></use>
+                     <symbol id="icon-gift" viewBox="0 0 32 32">
+                        <path d="M5.333 14.667c0.736 0 1.333 0.597 1.333 1.333v12h18.667v-12c0-0.736 0.597-1.333 1.333-1.333s1.333 0.597 1.333 1.333v13.333c0 0.736-0.597 1.333-1.333 1.333h-21.333c-0.736 0-1.333-0.597-1.333-1.333v-13.333c0-0.736 0.597-1.333 1.333-1.333z"></path>
+                        <path d="M1.333 9.333c0-0.736 0.597-1.333 1.333-1.333h26.667c0.736 0 1.333 0.597 1.333 1.333v6.667c0 0.736-0.597 1.333-1.333 1.333h-26.667c-0.736 0-1.333-0.597-1.333-1.333v-6.667zM4 10.667v4h24v-4h-24z"></path>
+                        <path d="M16 8c0.736 0 1.333 0.597 1.333 1.333v20c0 0.736-0.597 1.333-1.333 1.333s-1.333-0.597-1.333-1.333v-20c0-0.736 0.597-1.333 1.333-1.333z"></path>
+                        <path d="M10 4c1.592 0 2.743 1.118 3.582 2.643 0.255 0.463 0.461 0.932 0.624 1.357h-4.205c-0.53 0-1.039-0.211-1.414-0.586s-0.586-0.884-0.586-1.414c0-0.53 0.211-1.039 0.586-1.414s0.884-0.586 1.414-0.586zM16 9.333c1.307-0.261 1.307-0.262 1.307-0.262l-0.001-0.004-0.001-0.007-0.004-0.021c-0.004-0.017-0.009-0.041-0.015-0.071-0.013-0.059-0.032-0.142-0.058-0.244-0.051-0.205-0.129-0.492-0.237-0.834-0.215-0.679-0.559-1.599-1.072-2.532-0.995-1.809-2.844-4.024-5.918-4.024-1.238 0-2.425 0.492-3.3 1.367s-1.367 2.062-1.367 3.3c0 1.238 0.492 2.425 1.367 3.3s2.062 1.367 3.3 1.367h6c0.399 0 0.778-0.179 1.031-0.488s0.354-0.716 0.276-1.108l-1.307 0.262z"></path>
+                        <path d="M16.082 5.357c0.995-1.809 2.843-4.024 5.918-4.024 1.238 0 2.425 0.492 3.3 1.367s1.367 2.062 1.367 3.3-0.492 2.425-1.367 3.3c-0.875 0.875-2.062 1.367-3.3 1.367h-6c-0.399 0-0.778-0.179-1.031-0.488s-0.355-0.715-0.276-1.107l1.307 0.261c-1.307-0.261-1.308-0.261-1.307-0.261l0.001-0.005 0.001-0.007 0.004-0.021c0.004-0.017 0.009-0.041 0.015-0.071 0.013-0.059 0.032-0.142 0.058-0.244 0.051-0.205 0.129-0.492 0.237-0.834 0.215-0.679 0.559-1.599 1.072-2.532zM17.795 8h4.205c0.53 0 1.039-0.211 1.414-0.586s0.586-0.884 0.586-1.414c0-0.53-0.211-1.039-0.586-1.414s-0.884-0.586-1.414-0.586c-1.592 0-2.743 1.118-3.582 2.643-0.255 0.463-0.461 0.932-0.624 1.357zM17.307 9.597c-0 0-0 0 0 0v0z"></path>
+                        </symbol>
+                  </svg>
+                  <span>BTP Gift Card</span>
+               </a>
+               <a href="#" class="heading__link">
+                  <svg class="icon icon-star"><use xlink:href="#icon-star"></use>
+                     <symbol id="icon-star" viewBox="0 0 32 32">
+                        <path d="M16 2.222c0.508 0 0.971 0.288 1.196 0.743l3.81 7.719 8.521 1.245c0.502 0.073 0.919 0.425 1.076 0.908s0.025 1.012-0.338 1.366l-6.164 6.004 1.455 8.482c0.086 0.5-0.12 1.006-0.53 1.304s-0.955 0.338-1.404 0.101l-7.619-4.007-7.619 4.007c-0.449 0.236-0.994 0.197-1.404-0.101s-0.616-0.804-0.53-1.304l1.455-8.482-6.164-6.004c-0.363-0.354-0.495-0.884-0.338-1.366s0.573-0.835 1.075-0.908l8.521-1.245 3.81-7.719c0.225-0.455 0.688-0.743 1.196-0.743zM16 6.568l-2.924 5.925c-0.194 0.393-0.569 0.666-1.003 0.729l-6.542 0.956 4.732 4.609c0.315 0.306 0.458 0.748 0.384 1.181l-1.117 6.51 5.848-3.076c0.389-0.204 0.853-0.204 1.241 0l5.848 3.076-1.117-6.51c-0.074-0.433 0.069-0.874 0.384-1.181l4.732-4.609-6.541-0.956c-0.434-0.063-0.809-0.336-1.003-0.729l-2.924-5.925z"></path>
+                        </symbol>
+                  </svg>
+                  <span>Loyalty Program</span>
+               </a>
+            </div>
+         </div>
+      </div>
+      <header class="header">
+         <div class="container">
+            <div class="header__body">
+               <a href="#" class="header__logo">
+                  <img src="img/logo.png" alt="BestTourPlan">
+               </a>
+               <div class="header__search search">
+                  <form action="#" class="search__form">
+                     <input type="text" class="search__input" placeholder="Search Location">
+                     <button class="search__btn" type="submit">
+                        <svg class="icon icon-search"><use xlink:href="#icon-search"></use>
+                           <symbol id="icon-search" viewBox="0 0 32 32">
+                              <path fill="#fff" style="fill: var(--color2, #fff)" d="M14.666 5.333c-5.155 0-9.333 4.179-9.333 9.333s4.179 9.333 9.333 9.333c5.155 0 9.333-4.179 9.333-9.333s-4.179-9.333-9.333-9.333zM2.667 14.667c0-6.627 5.373-12 12-12s12 5.373 12 12c0 6.628-5.373 12-12 12s-12-5.372-12-12z"></path>
+                              <path fill="#fff" style="fill: var(--color2, #fff)" d="M21.257 21.257c0.521-0.521 1.365-0.521 1.886 0l5.8 5.8c0.521 0.521 0.521 1.365 0 1.886s-1.365 0.521-1.886 0l-5.8-5.8c-0.521-0.521-0.521-1.365 0-1.886z"></path>
+                              </symbol>
+                        </svg>
+                     </button>
+                  </form>
+                  <button class="search__mob" type="button">
+                     <svg class="icon icon-search"><use xlink:href="#icon-search"></use>
+                        <symbol viewBox="0 0 32 32">
+                           <path fill="#fff" style="fill: var(--color2, #fff)" d="M14.666 5.333c-5.155 0-9.333 4.179-9.333 9.333s4.179 9.333 9.333 9.333c5.155 0 9.333-4.179 9.333-9.333s-4.179-9.333-9.333-9.333zM2.667 14.667c0-6.627 5.373-12 12-12s12 5.373 12 12c0 6.628-5.373 12-12 12s-12-5.372-12-12z"></path>
+                           <path fill="#fff" style="fill: var(--color2, #fff)" d="M21.257 21.257c0.521-0.521 1.365-0.521 1.886 0l5.8 5.8c0.521 0.521 0.521 1.365 0 1.886s-1.365 0.521-1.886 0l-5.8-5.8c-0.521-0.521-0.521-1.365 0-1.886z"></path>
+                           </symbol>
+                     </svg>
+                  </button>
+               </div>
+               <div class="header__shop shop-cart">
+                  <button class="shop-cart__btn" type="button">
+                     <svg class="icon icon-shop-cart"><use xlink:href="#icon-shop-cart"></use>
+                        <symbol id="icon-shop-cart" viewBox="0 0 32 32">
+                           <path d="M9.333 28c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667-1.194 2.667-2.667 2.667c-1.473 0-2.667-1.194-2.667-2.667z"></path>
+                           <path d="M24 28c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667z"></path>
+                           <path d="M0 1.333c0-0.736 0.597-1.333 1.333-1.333h5.333c0.636 0 1.183 0.449 1.307 1.072l1.12 5.595h21.573c0.397 0 0.774 0.177 1.027 0.483s0.357 0.709 0.282 1.1l-2.135 11.197c-0.183 0.921-0.684 1.748-1.415 2.337-0.728 0.586-1.637 0.898-2.571 0.884h-12.937c-0.934 0.015-1.843-0.298-2.571-0.884-0.731-0.589-1.232-1.415-1.415-2.335-0-0 0 0 0 0l-2.227-11.129c-0.009-0.037-0.017-0.074-0.022-0.112l-1.109-5.54h-4.24c-0.736 0-1.333-0.597-1.333-1.333zM9.628 9.333l1.92 9.594c0.061 0.307 0.228 0.583 0.472 0.779s0.549 0.301 0.862 0.295l0.026-0 12.986 0c0.313 0.006 0.618-0.098 0.862-0.295 0.243-0.195 0.409-0.469 0.471-0.775l1.83-9.598h-19.427z"></path>
+                           </symbol>
+                     </svg>
+                     <span>2</span>
+                  </button>
+               </div>
+               <div class="header__user user">
+                  <div class="user__photo">
+                     <img src="img/user.png" alt="User">
+                  </div>
+                  <span class="user__name">Nathan</span>
+                  <div class="user__arrow">
+                     <svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use>
+                        <symbol id="icon-arrow" viewBox="0 0 32 32">
+                           <path d="M0.669 7.527c0.893-0.893 2.34-0.893 3.232 0l12.098 12.098 12.098-12.098c0.893-0.893 2.34-0.893 3.232 0s0.893 2.34 0 3.232l-13.714 13.714c-0.893 0.893-2.34 0.893-3.232 0l-13.714-13.714c-0.893-0.893-0.893-2.34 0-3.232z"></path>
+                           </symbol>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <nav class="nav">
+         <div class="container">
+            <div class="nav__body">
+               <a href="#" class="nav__item">All deals</a>
+               <a href="#" class="nav__item">Hotels</a>
+               <a href="#" class="nav__item">Activities</a>
+               <a href="#" class="nav__item">Hotel day packages</a>
+               <a href="#" class="nav__item">Restaurants</a>
+               <a href="#" class="nav__item">Events</a>
+               <a href="#" class="nav__item">Rodrigues</a>
+            </div>
+            <div class="nav__mob">
+               <span>Menu</span>
+            </div>
+         </div>
+      </nav>
    </div>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
