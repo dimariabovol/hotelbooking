@@ -38,6 +38,11 @@
 		@content;
 	}
 }
+@mixin to1140 {
+	@media only screen and (max-width: 1140px) {
+		@content;
+	}
+}
 @mixin to1100 {
 	@media only screen and (max-width: 1099.98px) {
 		@content;
@@ -65,6 +70,11 @@
 }
 @mixin to680 {
 	@media only screen and (max-width: 680px) {
+		@content;
+	}
+}
+@mixin to660 {
+	@media only screen and (max-width: 660px) {
 		@content;
 	}
 }
