@@ -2,6 +2,7 @@ $(document).ready(function(){
    menu();
    search();
    sliderModel();
+   sliderFeedback();
    tab();
 });
 
@@ -45,6 +46,17 @@ function search() {
 
 function sliderModel() {
    $('.model__slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      prevArrow: '<div class="prev"></div>',
+      nextArrow: '<div class="next"></div>'
+    });
+}
+
+function sliderFeedback() {
+   $('.feedback__slider').slick({
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
